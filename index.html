@@ -30,6 +30,23 @@
 
         var execute = vehicle.printVehicleNameInner();
         execute();
+        execute.call(vehicle);
+
+        var execute2 = vehicle.printVehicleNameInner().bind(this);
+        execute2();
+
+        //Ex 3
+        function fetchUsers() {
+            fetch('https://api.github.c om/users').then(function (response) {
+                return response.json();
+            }).then(function(json) {
+                console.log(json);
+            });
+        }
+
+        fetchUsers();
+
+
     </script>
 </head>
 <body>
