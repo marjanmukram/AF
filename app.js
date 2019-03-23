@@ -7,7 +7,7 @@ const fs = require('fs');
 //     }
 //     console.log('File was saved');
 // });
-const fileName = __dirname + '/test.txt';
+// const fileName = __dirname + '/test.txt';
 //const outFileName = __dirname + '/test-copy.txt';
 
 //const readStream = fs.createReadStream(fileName);
@@ -31,15 +31,15 @@ const fileName = __dirname + '/test.txt';
 
 
 //synchronous reading
- const data = fs.readFileSync(fileName);
- console.log(data.toString());
+//  const data = fs.readFileSync(fileName);
+//  console.log(data.toString());
 
 
 //Os related stuff
-// const os = require('os');
-//
-// console.log('Architecture ' + os.arch());
-// console.log('CPUs ' + os.cpus().length);
-// console.log('OS ' + os.platform());
+const os = require('os');
+
+console.log('Architecture ' + os.arch());
+console.log('CPUs ' + os.cpus().length);
+console.log('OS ' + os.platform());
 
 
