@@ -2,8 +2,16 @@ package com.example.demo.domain;
 
 import java.util.Date;
 
+import javax.validation.constraints.NotEmpty;
+
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import net.minidev.json.annotate.JsonIgnore;
 
+@Document("message")
 public class Message {
 	@Id
 	private String id;
